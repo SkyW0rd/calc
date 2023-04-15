@@ -3,6 +3,6 @@
 TEST(AddTest, Plus)
 {
 	int a = 100;
-	_Sqrt(a);
+	_Sqrt(a, 2);
 	EXPECT_EQ(a, 10);
 }
