@@ -2,22 +2,27 @@
 #include <iostream>
 #include "gtest/gtest.h"
 template<typename T, typename Temp>
-void _Add(T& x, Temp y)
+void _add(T& x, Temp y)
+{
+
+}
+template<typename T, typename Temp>
+void _sub(T& x, Temp y)
+{
+
+}
+template<typename T, typename Temp>
+void _mul(T& x, Temp y)
+{
+
+}
+template<typename T, typename Temp>
+void _div(T& x, Temp y)
 {
 
 }
 template<typename T>
-void _Sqrt(T& x, int n)
-{
-	T  t, m = x / 2;
-	do {
-		t = m;
-		m = (t + (x / t)) / n;
-	} while ((t - m) != 0);
-	x = m;
-}
-template<typename T>
-void _Pow(T& a, int b)
+void _pow(T& a, int b)
 {
 	T x = a;
 	if (b > 1)
@@ -32,41 +37,66 @@ void _Pow(T& a, int b)
 		a = 1;
 	}
 }
-//template<class T>
-//void myExp(T& x)
-//{
-//
-//}
-//template<class T>
-//void myLn(T& x)
-//{
-//}
-//template<class T>
-//void myLog(T& x, T b)
-//{
-//
-//}
-//template<class T>
-//void mySin(T& x)
-//{
-//
-//}
-//template<class T>
-//void myCos(T& x)
-//{
-//
-//}
-//template<class T>
-//void myTan(T& x)
-//{
-//
-//}
-//template<class T>
-//void myDegrees(T& x)
-//{
-//
-//}
-//template<class T>
-//void myRadians(T& x)
-//{
-//}
+template<typename T>
+void _sqrt(T& x, int n)
+{
+	T  t, m = x / 2;
+	do {
+		t = m;
+		m = (t + (x / t)) / n;
+	} while ((t - m) != 0);
+	x = m;
+}
+template<class T>
+void _ln(T& x)
+{
+}
+template<class T>
+void _lg(T& x, T b)
+{
+
+}
+template<class T>
+void _sin(T& x)
+{
+
+}
+template<class T>
+void _cos(T& x)
+{
+
+}
+template<class T>
+void _asin(T& x)
+{
+
+}
+template<class T>
+void _acos(T& x)
+{
+
+}
+template<class T>
+void _tg(T& x)
+{
+
+}
+template<class T>
+void _atg(T& x)
+{
+
+}
+template<class T>
+void _ctg(T& x)
+{
+
+}
+template<class T>
+void myDegrees(T& x)
+{
+
+}
+template<class T>
+void myRadians(T& x)
+{
+}
